@@ -9,8 +9,8 @@
 
 訓練集如Train.csv，測試集如Test.csv，
 資料為字串，進行分割後數值按順序分別為房間數、廁所數、面積、郵遞區號、房價、廁所照片檔名、房間照片檔名、房屋照片檔名、廚房照片檔名。
-訓練集圖片:https://reurl.cc/G4o4pd 
-測試集圖片:https://reurl.cc/E4p4gg
+訓練集圖片:https://reurl.cc/qrOKVy 
+測試集圖片:https://reurl.cc/xLOK6V 
 
 三、方法
 
@@ -21,7 +21,8 @@
 
 四、結果
 
-從下圖可看出loss有明顯下降，在loss無下降後停止訓練。
+從下圖可看出loss有明顯下降，在loss不再下降後停止訓練，並輸出模型。
+模型:
 ![image](https://github.com/YoweioY/house-price-forecast/assets/91478099/41b97913-dc72-47b5-8d1a-53c1d15394e2)
 
 將預測值與測試集資料做比對可發現模型雖無法準確預測實際值但可大略預測房價變化之趨勢，MAE=3202100.98，RMSE=4153473.84，R^2=36%
